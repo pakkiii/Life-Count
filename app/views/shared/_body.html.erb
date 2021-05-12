@@ -1,0 +1,77 @@
+
+
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      あなたのライフはあといくつ？
+    </h2>
+
+    <p class='service-explain'>
+      Life Countは自分の悩みを匿名で打ち明ける環境
+    </p>
+    <p class='service-explain'>
+      誰の目も気にせず正直に自分の辛さを吐き出してみませんか？
+    </p>
+  </div>
+
+  <div class='select-reason-contents'>
+    <h2 class='title'>
+      Life Countのシンプルな２つの機能
+    </h2>
+    <ul class='reason-lists'>
+      <li class='list'>
+        <%= image_tag "think.png", class:"list-pict" %>
+        <span class='reason-list-number'></span>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>あなたのライフ</span>
+          を書き込む
+        </h3>
+        <p class='reason-list-description'>
+          自分がしんどい時打ち明ける人がいなくても書き込むだけで少しは木が紛れるかもしれません。
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "know.png", class:"list-pict" %>
+        <span class='reason-list-number'></span>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>同じ悩みを検索</span>
+          
+        </h3>
+        <p class='reason-list-description'>
+          同じような境遇の人があなた以外にもいるかもしれません。
+          同じ辛い思いをしているのが思いのほか多いと感じるのはよくあることです。
+          そんな環境をシンプルな機能でお届けします。
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class='ad-contents'>
+    <h2 class='ad-title'>
+      どこにでもありそうでなかったシンプルな投稿サイト
+    </h2>
+    <p class='ad-explain'>
+      Life Countは皆様の心の疲れを少しでも和らげればと思います。
+    </p>
+    <p class='ad-explain'>
+      内容はシンプルな投稿のみ、「こんなことして何がかわる、、」
+    </p>
+    <p class='ad-explain'>
+      そう思うのはもっともですがこの機能を使い、もし少しでも楽になれるのかもしれないなら1度投稿してみては？
+    </p>
+  </div>
+
+  <div class="rogin-boton">
+    <div class="right-content">
+      <%= image_tag "login.png", class:"list-pict" %>
+    </div>
+ 
+    <div class="left-content">
+      <div class="login-btn">
+        <%= link_to 'ログイン', new_user_session_path, class: "login-b" %>
+      </div>
+      <div class="login-btn">
+        <%= link_to '新規登録', new_user_registration_path, class: "sign-b" %>
+      </div>
+    </div>
+
+
+  </div>

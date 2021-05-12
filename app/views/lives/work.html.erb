@@ -1,0 +1,32 @@
+<% @lives = Life.all %>
+<%= render "shared/header" %>
+
+<div class="main-page-box">
+  <%= render "shared/leftbox" %>
+  <div class='item-contents'>
+    <h2 class='title'>最近の仕事関係の悩み</h2>
+    <div class='item-lists'>
+
+      <% @lives.each do |life| %>
+        <% if life.tired_id == 3 %>
+          <div class='item-img-content'>
+            <%= link_to life_path(life.id) do %>
+            <div class="created">
+              <%= life.created_at.strftime("%Y-%m-%d ")%>
+            </div>
+            <div class="life-title-content">
+              <div class="tired-name">種類</div><%= life.tired.name%>
+            </div>
+            <div class='life-title-content'>
+              <div class="tired-name">季節</div><%= life.month.name %>
+            </div>
+            <% end %>
+          </div>
+
+        <% end %>
+          
+      <% end %>
+      
+    </div>
+  </div>
+</div>

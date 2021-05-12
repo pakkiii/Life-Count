@@ -1,0 +1,86 @@
+<div class="items-sell-contents">
+  <header class="items-sell-header">
+    <%= link_to image_tag('life.png' , size: '185x50'), "/" %>
+
+  </header>
+  <div class="items-sell-main">
+    <h2 class="items-sell-title">今日もここまでお疲れ様です</h2>
+    <%= form_with model: @life, local: true do |f| %>
+
+    
+    <%= render 'shared/error_messages', model: f.object %>
+    
+
+    <div class="items-detail">
+      <div class="left-advaice-text">
+        <div class="advaice">
+          <p>今の自分の気持ちを</p>
+          <p>正直に選んでみてださい</p>
+        </div>
+      </div>
+      <div class="form">
+        <div class="weight-bold-text">
+          あなたのライフはあとどのくらいもちそうですか？
+          
+        </div>
+        <%= f.collection_select(:how_long_id, HowLong.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+        <div class="weight-bold-text">
+          今何が一番しんどいですが？
+        </div>
+        <%= f.collection_select(:tired_id, Tired.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
+        <div class="weight-bold-text">
+          今何がしたいか正直に選んでみてください
+        </div>
+        <%= f.collection_select(:want_id, Want.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+        <div class="weight-bold-text">
+          今どの季節が近いですか？
+        </div>
+        <%= f.collection_select(:month_id, Month.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+      </div>
+    </div>
+
+    <div class="new-items">
+      <div class="weight-bold-text">
+        上記で選んだことについて次の２つのノートに書き込んでみましょう
+        
+      </div>
+      
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          今しんどいこと
+        </div>
+        <%= f.text_area :bad_thing, class:"items-text", id:"item-info", placeholder:"ここはあなただけのスペースです。　　　　何も気にせず書きたいこと書き込んでみましょう。もしかすると気持ちが少し楽になるかもしれません" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          今感謝できること
+        </div>
+        <%= f.text_area :hope, class:"items-text", id:"item-info", placeholder:"感謝できることはないのが普通です、皮肉でも恨みでも現状に対する不満や不安それを見方を変えて書き込んでみましょう・・・・・例）１日中気持ちが落ち込んで何もできなかった⇨ゆっくり休むことが出来た　等" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+    </div>
+
+
+    <%# 注意書き %>
+    <div class="caution">
+      <p class="sentence">
+        今日もお疲れ様です、よくがんばりましたね＾＾
+      </p>
+      <p class="sentence">
+        当サイトは匿名で誰の目も気にせず自分のしんどさを吐き出せる場所ですが
+        <a href="#">特定された一部または個人を不快にさせるような記述</a>
+        は控えていただきたいです。皆様の辛さが少しでも改善されますように。。。
+      </p>
+    </div>
+    <div class="sell-btn-contents">
+      <%= f.submit "記録する" ,class:"sell-btn" %>
+      <%=link_to 'やめておく', root_path, class:"back-btn" %>
+    </div>
+  </div>
+  <% end %>
+
+  <footer class="items-sell-footer">
+    <p class="inc">
+      ©︎Life Count,Inc.
+    </p>
+  </footer>
+</div>

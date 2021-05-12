@@ -1,0 +1,354 @@
+
+.main-show {
+  display: flex;
+  height: 70%;
+  width: 100%;
+  background-color: rgb(235, 236, 236);
+}
+
+.life-acount {
+  margin-top: 5%;
+  width: 35%;
+  height: 40%;
+  background-color: rgb(235, 236, 236);
+}
+
+.acaunt-icon {
+  margin-top: 10%;
+  margin-left: 35%;
+  width: 200px;
+  height: 50%;
+}
+
+.life-show {
+  height: 40%;
+  width: 65%;
+  margin-left: 10%;
+  margin-top: 5%;
+  background-color: rgb(235, 236, 236);
+}
+
+
+
+
+
+
+/* 投稿詳細 */
+
+.double {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  margin-top: 7%;
+}
+
+/* 投稿内容 */
+.life-box {
+  width: 70%;
+}
+
+table{
+  width: 60%;
+  border-spacing: 0;
+  text-align: center;
+}
+
+table th{
+  border-bottom: solid 2px #817c7b;
+  padding: 10px 0;
+}
+
+table td{
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+.box26 {
+  height: 300px;
+  position: relative;
+  padding: 20px;
+  background-color: #e2e1df;
+  border-radius: 15px;
+  margin-right: 70px;
+  border: 3px solid;
+  border-color: grey;
+}
+.box26::before {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: #e2e1df;
+  right: -70px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid;
+  border-color: grey;
+}
+  
+.box26::after {
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: #e2e1df;
+  right: -120px;
+  bottom: 10px;
+  width: 25px;
+  height: 25px;
+  border: 3px solid;
+  border-color: grey;
+}
+
+.box-title {
+  font-size: large;
+  border-bottom: solid gray;
+}
+
+.acount-content {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(235, 236, 236);
+}
+
+.owner-pass {
+  height: 100px;
+  width: 150px;
+  background-color: rgb(235, 236, 236);
+  border-radius: 6%;
+  color: #727271;
+  font-size: large;
+  border-bottom: solid 2px #727271;
+}
+
+
+
+
+
+
+
+
+.life-title-content {
+  display: flex;
+  border-bottom: solid 3px rgb(99, 97, 97);
+}
+
+.tired-name {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/* 投稿内容 */
+
+
+
+/* いいね機能ボタン↓ */
+
+
+
+.me-to-box {
+  width: 20%;
+  height: 100%;
+
+}
+
+.box-icon {
+  border: none;
+  width: 40%;
+  height: 30%;
+  
+}
+
+
+
+.me-to-icon {
+  margin-top: 30px;
+  background-color: rgb(133, 234, 241);
+  height: 35px;
+  width: 60px;
+  border: none;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.cansel-icon {
+  margin-top: 30px;
+  background-color: rgb(97, 233, 131);
+  height: 35px;
+  width: 60px;
+  border: none;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.icon-sentence {
+ text-align: center;
+}
+
+
+/* いいね機能ボタン↑ */
+
+
+
+.life-index-contents {
+  width: 100%;
+  height:1000px;
+  background-color: rgb(235, 236, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+  
+}
+
+.item-contents>.title {
+  font-size: medium;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+
+
+.bxslider {
+  width: 50%;
+  height: 200px;
+}
+
+
+
+.life-lists {
+  margin: 30px 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 2px solid gray;
+  border-radius: 1%;
+  background-color: rgb(235, 236, 236);
+}
+
+
+.life-title-content {
+  text-align: center;
+  color: #727271;
+  font-size: x-large;
+  margin-top: 20px;
+
+}
+
+.item-img-content {
+  margin-left: 10px;
+  margin-top: 20px;
+  position: relative;
+  height: 200px;
+  width: 250px;
+  background-color: rgb(127, 208, 255);
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+.created {
+  font-size: medium;
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  color: #aaa;
+}
+
+
+.life-info {
+  color: #727271;
+  text-align: center;
+  padding: 1vw;
+  margin-top: 30px;
+}
+
+.life-name {
+  font-size: 2.5vh;
+  font-size: x-large;
+}
+
+
+
+.yell-space {
+  width: 100%;
+  background-color: rgb(235, 236, 236);
+  height: 600px;
+  padding-top: 10px;
+}
+
+
+
+.yells-box {  
+  margin-top: 100px;
+  height: 300px;
+  width: 80%;
+  margin: 0 10%;
+  background-color: rgb(235, 236, 236);
+  border-radius: 10px;
+  border: 2px solid gray;
+  display: flex;
+}
+
+.yell-lists {
+  width: 60%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+
+}
+
+.yell-content {
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+
+
+.yell-form {
+  width: 40%;
+
+}
+
+.form-input {
+  width: 100%;
+  height: 80%;
+}
+
+.form-yell {
+  margin-top: 10%;
+  width: 80%;
+  height: 70%;
+  background-color: white;
+  border-radius: 6px;
+  border: none;
+}
+
+.yell-submit {
+  margin-left: 60%;
+  
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: aqua;
+}

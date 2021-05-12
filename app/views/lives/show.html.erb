@@ -1,0 +1,132 @@
+<%= render "shared/header" %>
+<div class="main-show">
+  <div class="life-show">
+    <div class="box26">
+      <span class="box-title">しんどい事</span>
+      <p><%= @life.bad_thing %></p>
+      <span class="box-title">感謝できること</span>
+      <p><%= @life.hope %></p>
+    </div>
+    
+    <div class="double">
+      <div class="life-box">
+        <table>
+          <tr>
+          <th>投稿された季節</th>
+            <td><%= @life.month.name %></td>
+          </tr>
+          <tr>
+          <th>悩んでいる事</th>
+            <td><%= @life.tired.name %></td>
+          </tr>
+          <tr>
+          <th>望んでいる事</th>
+            <td><%= @life.want.name %></td>
+          </tr>
+        </table>
+      </div>
+
+
+      <div class="me-to-box">
+        <% if current_user.id == @life.user.id %>
+          <%= @life.likes.count %>
+        <% else %>
+          <% if current_user.already_liked?(@life) %>
+          
+            <%= button_to life_like_path(@life), method: :delete, class: "box-icon"  do %>
+              <div class="cansel-icon" >
+                <div class="icon-sentence">
+                  Cansel
+                </div>
+              </div>
+            <% end %>
+          <% else %>
+            <%= button_to life_likes_path(@life), class: "box-icon" do %>
+              <div class="me-to-icon" >
+                <div class="icon-sentence">
+                  Mee too!
+                </div>
+              </div>
+            <% end %>
+          <% end %>
+        <% end %>
+
+        <div class="acount-content">
+          <% if current_user.id == @life.user.id %>
+            <div class="owner">過去の投稿</div>
+          <% else %>
+            <%= link_to  "/users/#{@life.user.id}", class: "owner-pass" do %>
+              投稿者
+              <%= @life.user.nick_name%>さん
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+  </div>
+
+  <div class="life-acount">
+    <%= image_tag "acaunt.png", class:"acaunt-icon" %>
+   
+  </div>
+
+ 
+
+</div>
+
+<div class="yell-space">
+  <div class='yells-box'>
+    <%=%>
+    <div class="yell-lists">
+      <% @yells.each do |yell| %>
+        <div class="yell-content">
+          <%= yell.content%>
+          <%= yell.created_at.strftime("%m") %>月<%= yell.created_at.strftime("%d") %>日
+        </div>
+      <% end %>
+    </div>
+    <%= form_with model: [@life, @yell], class: 'yell-form', local: true do |f| %>
+      <div class="form-input">
+        <%= f.text_field :content, class: 'form-yell', placeholder: '相手を思いやるエールを送りましょう!' %>
+      </div>
+      <%= f.submit '送信', class: 'yell-submit' %>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+
+<div class='life-index-contents'>
+    <h2 class='title'>新しく投稿された悩み</h2>
+    <div class="life-lists">
+      <% @lives.each do |life| %>
+          <div class='item-img-content'>
+            <%= link_to life_path(life.id) do %>
+            <div class="created">
+              <%= life.created_at.strftime("%Y-%m-%d")%>
+            </div>
+            <div class="life-title-content">
+              <div class="tired-name">種類</div><%= life.tired.name%>
+            </div>
+            <div class='life-title-content'>
+              <div class="tired-name">季節</div><%= life.month.name %>
+            </div>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+
+
+
+<%= render "shared/putsicon"%>
+
+
+
+

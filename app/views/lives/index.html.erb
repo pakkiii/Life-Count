@@ -1,0 +1,10 @@
+<%= render "shared/header" %>
+
+
+  <% if user_signed_in? %>
+    <%= render "shared/second_body" %>
+  <% else %>
+    <%= render "shared/body" %>
+  <% end %>
+
+ 

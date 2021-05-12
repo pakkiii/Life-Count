@@ -1,0 +1,100 @@
+a {
+  text-decoration: none;
+}
+
+
+.life-contents {
+  width: 75%;
+  height:1000px;
+  background-color: #dadbdb;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 0;
+  
+}
+
+.life-contents>.title {
+  font-size: medium;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.life-contents>.subtitle {
+
+}
+
+
+
+.life-lists {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 2px solid gray;
+  border-radius: 20px;
+  background-color: #dadbdb;
+}
+
+
+
+.life-img-content {
+  margin-left: 10px;
+  margin-top: 20px;
+  position: relative;
+  height: 200px;
+  width: 250px;
+  background-color: rgb(127, 208, 255);
+  border-radius: 30px;
+}
+
+.life-title-content {
+  text-align: center;
+  color: #727271;
+  font-size: x-large;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+.follow-box {
+  height: 70px;
+  width: 70px;
+  margin: 0 5% 0 auto;
+}
+
+.follow-btn {
+  border: none;
+  height: 100px;
+  width: 100px;
+  background-color: #dadbdb;
+  border-radius: 100%;
+}
+
+.follow-btn:hover {
+  border: none;
+  height: 100px;
+  width: 100px;
+  background-color: #c3fae5;
+  border-radius: 100%;
+}
+
+.unfollow-btn {
+  border: none;
+  height: 100px;
+  width: 100px;
+}
+
+.follow-icon {
+  width: 60%;
+  height: 60%;
+}
+
+
+
+
