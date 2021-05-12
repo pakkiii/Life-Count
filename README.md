@@ -13,6 +13,10 @@
 ### Association
 
 - has_many :lives
+- has_many :yells
+- has_many :likes
+- has_many :relationships
+
 
 
 ##  lifeテーブル
@@ -29,4 +33,49 @@
 ### Association
 
 - belongs_to :user
+- has_many :yells
+- has_many :likes
+
+
+
+##  likeテーブル
+
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| user        | references | null: false, foreign_key: true |
+| life        | references | null: false, foreign_key: true |
+### Association
+
+- belongs_to :user
+- belongs_to :life
+
+
+
+##  relationshipテーブル
+
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| user        | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+
+
+##  yellテーブル
+
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| user        | references | null: false, foreign_key: true |
+| life        | references | null: false, foreign_key: true |
+### Association
+
+- belongs_to :user
+- belongs_to :life
+
+
+
+
+
+
 
