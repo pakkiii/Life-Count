@@ -1,6 +1,6 @@
 class Want < ActiveHash::Base
   self.data = [
-    { id: 1, name: '今何がしたいですか？' },
+    { id: 1, name: '--' },
     { id: 2, name: '映画を見にいくなど自分の好きなことをしたい' },
     { id: 3, name: '一日思いっきり休みたい' },
     { id: 4, name: '一定期間何もしたくない' },
