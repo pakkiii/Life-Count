@@ -61,3 +61,4 @@ gem 'active_hash'
 
 gem 'bxslider-rails'
 gem 'jquery-rails'
+gem 'rails-i18n'
