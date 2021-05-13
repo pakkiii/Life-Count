@@ -10,21 +10,28 @@
   flex-direction: column;
 }
 
-
-
-
-.search-button {
-  width: 5vh;
-  border: 0;
-  cursor: pointer;
-  background-color: #14e0e7;
-  padding: 8px;
-  border-radius: 10px;
+.apri-title {
+  width: 185px;
+  height: 50%;
+  display: flex;
 }
 
-.search-icon {
-  width: 100%;
+.apri-title>h1 {
+  font-size: x-large;
+  color: rgb(43, 43, 43);
+  font-weight: 900;
 }
+
+.up-times-icon {
+  transform:rotate(180deg); 
+  margin-top: 4px;
+}
+
+.down-times-icon {
+  margin-top: 4px;
+}
+
+
 
 .nav {
   font-size: 18px;

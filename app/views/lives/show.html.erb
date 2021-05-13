@@ -29,14 +29,17 @@
 
       <div class="me-to-box">
         <% if current_user.id == @life.user.id %>
-          <%= @life.likes.count %>
+          <div class="me-to-count">
+            <h1>共感されたユーザー</h1><%= @life.likes.count %><h1>人</h1>
+          </div>
         <% else %>
           <% if current_user.already_liked?(@life) %>
           
             <%= button_to life_like_path(@life), method: :delete, class: "box-icon"  do %>
-              <div class="cansel-icon" >
+              <div class="me-to-icon" >
                 <div class="icon-sentence">
-                  Cansel
+                  <%= image_tag 'un-me-to.png', size: '40x40', class: "me-to-hand" %>
+                  <h1>Cansel</h1> 
                 </div>
               </div>
             <% end %>
@@ -44,7 +47,8 @@
             <%= button_to life_likes_path(@life), class: "box-icon" do %>
               <div class="me-to-icon" >
                 <div class="icon-sentence">
-                  Mee too!
+                  <%= image_tag 'me-to.png', size: '40x40', class: "me-to-hand" %>
+                  Mee too! 
                 </div>
               </div>
             <% end %>
@@ -98,32 +102,11 @@
   </div>
 </div>
 
-
-
-
-
-<div class='life-index-contents'>
-    <h2 class='title'>新しく投稿された悩み</h2>
-    <div class="life-lists">
-      <% @lives.each do |life| %>
-          <div class='item-img-content'>
-            <%= link_to life_path(life.id) do %>
-            <div class="created">
-              <%= life.created_at.strftime("%Y-%m-%d")%>
-            </div>
-            <div class="life-title-content">
-              <div class="tired-name">種類</div><%= life.tired.name%>
-            </div>
-            <div class='life-title-content'>
-              <div class="tired-name">季節</div><%= life.month.name %>
-            </div>
-            <% end %>
-          </div>
-      <% end %>
-    </div>
+<div class="show-space">
+  <div class="nesesary-show">
+    <%= render "shared/show_life" %>
   </div>
-
-
+</div>
 
 <%= render "shared/putsicon"%>
 
