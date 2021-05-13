@@ -134,13 +134,18 @@ table td{
 
 .life-title-content {
   display: flex;
-  border-bottom: solid 3px rgb(99, 97, 97);
+  border-bottom: solid 3px rgb(167, 165, 165);
 }
 
 .tired-name {
   margin-right: 20px;
   margin-left: 20px;
 }
+
+.tired-name-p {
+  font-size: x-large;
+}
+
 /* 投稿内容 */
 
 
@@ -155,26 +160,21 @@ table td{
 
 }
 
+.me-to-count {
+  display:flex;
+  border-bottom: 1px solid gray;
+}
+
 .box-icon {
   border: none;
-  width: 40%;
+  width: 30%;
   height: 30%;
   
 }
 
 
 
-.me-to-icon {
-  margin-top: 30px;
-  background-color: rgb(133, 234, 241);
-  height: 35px;
-  width: 60px;
-  border: none;
-  border-radius: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 
@@ -192,9 +192,19 @@ table td{
 
 
 .icon-sentence {
+  padding-top: 5px;
  text-align: center;
+ font-size: large;
+ display: flex;
+ height: 55px;
+ width: 100px;
+ background-color:rgb(170, 175, 171);
+ border-radius: 30px;
 }
 
+.icon-sentence>h1 {
+  margin: auto 0 auto 0;
+}
 
 /* いいね機能ボタン↑ */
 
@@ -211,11 +221,7 @@ table td{
   
 }
 
-.item-contents>.title {
-  font-size: medium;
-  line-height: 1.4;
-  font-weight: bold;
-}
+
 
 
 
@@ -234,6 +240,7 @@ table td{
   padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
   justify-content: space-around;
   border: 2px solid gray;
   border-radius: 1%;
@@ -249,15 +256,7 @@ table td{
 
 }
 
-.item-img-content {
-  margin-left: 10px;
-  margin-top: 20px;
-  position: relative;
-  height: 200px;
-  width: 250px;
-  background-color: rgb(127, 208, 255);
-  border-radius: 30px;
-}
+
 
 
 
@@ -268,12 +267,19 @@ table td{
 
 
 .created {
+  display: flex;
   font-size: medium;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 60px;
   margin-right: 60px;
-  color: #aaa;
+  color: rgb(87, 82, 82);
 }
+
+.c-1 {
+  margin-right: 25px;
+}
+
+
 
 
 .life-info {
@@ -293,7 +299,7 @@ table td{
 .yell-space {
   width: 100%;
   background-color: rgb(235, 236, 236);
-  height: 600px;
+  height: 400px;
   padding-top: 10px;
 }
 
@@ -351,4 +357,19 @@ table td{
   height: 30px;
   border: none;
   background-color: aqua;
+}
+
+.show-space {
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(235, 236, 236);
+
+}
+
+
+.nesesary-show {
+  width:80%;
+  height:1000px;
+  background-color:rgb(235, 236, 236);
+  margin: 0 auto;
 }

@@ -1,0 +1,103 @@
+<div class='item-lists'>
+  <% @lives.each do |life| %>
+    
+    <% if life.tired_id == 2 %>
+    
+      <div class='item-img-content'>
+        <%= link_to life_path(life.id) do %>
+          <div class="life-title-content">
+            <div class="tired-name">種類</div><%= life.tired.name%>
+          </div>
+          <div class='life-title-content'>
+            <div class="tired-name">季節</div><%= life.month.name %>
+          </div>
+          <div class="created">
+            <div class="c-1"><%= image_tag 'family.png' , size: '30x30' %></div>
+            <%= time_ago_in_words(life.created_at) %>前
+          </div>
+        <% end %>
+      </div>
+    <% elsif life.tired_id == 3 %>
+      <div class='item-img-content-2'>
+        <%= link_to life_path(life.id) do %>
+          <div class="life-title-content">
+            <div class="tired-name">種類</div><%= life.tired.name%>
+          </div>
+          <div class='life-title-content'>
+            <div class="tired-name">季節</div><%= life.month.name %>
+          </div>
+          <div class="created">
+            <div class="c-1"><%= image_tag 'work.png' , size: '30x30' %></div>
+            <%= time_ago_in_words(life.created_at) %>前
+          </div>
+        <% end %>
+      </div>
+    <% elsif life.tired_id == 4 %>
+      <div class='item-img-content-3'>
+        <%= link_to life_path(life.id) do %>
+          <div class="life-title-content">
+            <div class="tired-name">種類</div><%= life.tired.name%>
+          </div>
+          <div class='life-title-content'>
+            <div class="tired-name">季節</div><%= life.month.name %>
+          </div>
+          
+          <div class="created">
+            <div class="c-1"><%= image_tag 'school.png' , size: '30x30' %></div>
+            <%= time_ago_in_words(life.created_at) %>前
+          </div>
+        <% end %>
+      </div>
+    <% elsif life.tired_id == 5 %>
+      <div class='item-img-content-4'>
+        <%= link_to life_path(life.id) do %>
+          <div class="life-title-content">
+            <div class="tired-name">種類</div><%= life.tired.name%>
+          </div>
+          <div class='life-title-content'>
+            <div class="tired-name">季節</div><%= life.month.name %>
+          </div>
+          
+          <div class="created">
+            <div class="c-1"><%= image_tag 'private.png' , size: '30x30' %></div>
+            <%= time_ago_in_words(life.created_at) %>前
+          </div>
+        <% end %>
+      </div>
+    <% elsif life.tired_id == 6 %>
+      <div class='item-img-content-5'>
+        <%= link_to life_path(life.id) do %>
+          <div class="life-title-content">
+            <div class="tired-name">種類</div><%= life.tired.name%>
+          </div>
+          <div class='life-title-content'>
+            <div class="tired-name">季節</div><%= life.month.name %>
+          </div>
+          
+          <div class="created">
+            <div class="c-1"><%= image_tag 'other.png' , size: '30x30' %></div>
+            <%= time_ago_in_words(life.created_at) %>前
+          </div>
+        <% end %>
+      </div>
+    <% elsif life.tired_id == 7 %>
+      <div class='item-img-content-6'>
+        <%= link_to life_path(life.id) do %>
+          <div class="life-title-content-p">
+            <div class="tired-name-p">種類</div>
+            <div class="small-tired"><%= life.tired.name %></div>
+          </div>
+          <div class='life-title-content'>
+            <div class="tired-name">季節</div><%= life.month.name %>
+          </div>
+          
+          <div class="created">
+            <div class="c-1"><%= image_tag 'unknown.png' , size: '30x30' %></div>
+            <%= time_ago_in_words(life.created_at) %>前
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+      
+</div>

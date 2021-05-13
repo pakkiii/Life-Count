@@ -3,25 +3,7 @@
   <%= render "shared/leftbox" %>
   <div class='item-contents'>
     <h2 class='title'>新しく投稿された悩み</h2>
-    <div class='item-lists'>
-
-      <% @lives.each do |life| %>
-          <div class='item-img-content'>
-            <%= link_to life_path(life.id) do %>
-            <div class="created">
-              <%= life.created_at.strftime("%Y-%m-%d ")%>
-            </div>
-            <div class="life-title-content">
-              <div class="tired-name">種類</div><%= life.tired.name%>
-            </div>
-            <div class='life-title-content'>
-              <div class="tired-name">季節</div><%= life.month.name %>
-            </div>
-            <% end %>
-          </div>
-      <% end %>
-      
-    </div>
+    <%= render "shared/show_life"%>
   </div>
 </div>
 <%= render "shared/putsicon"%>
