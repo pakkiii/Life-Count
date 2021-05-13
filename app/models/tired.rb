@@ -1,6 +1,6 @@
 class Tired < ActiveHash::Base
   self.data = [
-    { id: 1, name: '現状のしんどいカテゴリーは何ですか？' },
+    { id: 1, name: '--' },
     { id: 2, name: '家族関係' },
     { id: 3, name: '仕事' },
     { id: 4, name: '学校' },
