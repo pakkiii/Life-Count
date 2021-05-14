@@ -1,4 +1,7 @@
 class LikesController < ApplicationController
+  before_action :authenticate_user!, only: [:create]
+  
+  
   def create
     @like = current_user.likes.create(life_id: params[:life_id])
     redirect_back(fallback_location: root_path)
@@ -9,8 +12,5 @@ class LikesController < ApplicationController
     @like.destroy
     redirect_back(fallback_location: root_path)
   end
-
-
-
 
 end
