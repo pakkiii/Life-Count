@@ -7,22 +7,23 @@
     <div class='item-lists'>
 
       <% @lives.each do |life| %>
-        <div class='item-img-content-3'>
-          <%= link_to life_path(life.id) do %>
-            <div class="life-title-content">
-              <div class="tired-name">種類</div><%= life.tired.name%>
-            </div>
-            <div class='life-title-content'>
-              <div class="tired-name">季節</div><%= life.month.name %>
-            </div>
-            
-            <div class="created">
-              <div class="c-1"><%= image_tag 'school.png' , size: '30x30' %></div>
-              <%= time_ago_in_words(life.created_at) %>前
-            </div>
-          <% end %>
-        </div>
-          
+        <% if life.tired_id == 4%>
+          <div class='item-img-content-3'>
+            <%= link_to life_path(life.id) do %>
+              <div class="life-title-content">
+                <div class="tired-name">種類</div><%= life.tired.name%>
+              </div>
+              <div class='life-title-content'>
+                <div class="tired-name">季節</div><%= life.month.name %>
+              </div>
+              
+              <div class="created">
+                <div class="c-1"><%= image_tag 'school.png' , size: '30x30' %></div>
+                <%= time_ago_in_words(life.created_at) %>前
+              </div>
+            <% end %>
+          </div>
+        <% end %>
       <% end %>
       
     </div>
