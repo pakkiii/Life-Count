@@ -7,7 +7,15 @@
   width: 100vw;
   padding: 2vh 15vw;
   display: flex;
-  flex-direction: column;
+}
+
+.left-space-head {
+
+}
+
+.right-space-head {
+  margin: 0 0 0 auto;
+  padding-top: 15px;
 }
 
 .apri-title {
@@ -89,4 +97,54 @@
 .sign-up {
   text-decoration: none;
   color: #333333;
+}
+
+
+.search-form {
+  border-radius: 30px;
+  height: 50%;
+  width: 90%;
+  background-color: #a1a1a5;
+  color: aqua;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.search-form>h1 {
+  color:rgb(64, 66, 65);
+  font-size: large;
+  margin-left: 30px;
+}
+
+.search-bottom {
+  width: 70%;
+  background-color: #636666;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-top: 13%;
+  padding-left: 10%;
+}
+
+.search-input {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: large;
+  padding-left: 40px;
+  background-color: rgb(241, 241, 241);
+
+}
+
+.search-icon {
+  color: aqua;
+}
+
+.life-search-form {
+  display: flex;
+}
+
+.search-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 }

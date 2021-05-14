@@ -5,6 +5,14 @@ class Life < ApplicationRecord
   has_many :liked_users, through: :likes, source: :user
   has_many :likes
   has_many :yells
+
+  def self.search(search)
+    if search != ""
+      Life.where('bad_thing LIKE? OR hope LIKE?' , "%#{search}%", "%#{search}%")
+    else
+      Life.all
+    end
+  end
   
 
   belongs_to :how_long

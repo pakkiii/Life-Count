@@ -26,6 +26,12 @@ class LivesController < ApplicationController
     @yells = @life.yells
   end
 
+
+  def search
+    @lives = Life.search(params[:keyword])
+  end
+
+
   def private
   end
 
