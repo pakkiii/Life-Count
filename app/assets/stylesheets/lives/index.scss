@@ -122,6 +122,9 @@ a {
 
 .main-page-box {
   display: flex;
+  padding: 0 6%;
+  background-color: #dadbdb;
+  width: 100%;
 }
 
 
@@ -179,33 +182,6 @@ a {
   padding: 0;
 }
 
-.search-form {
-  border-radius: 30px;
-  height: 40%;
-  width: 80%;
-  background-color: #a1a1a5;
-  margin-top: 20%;
-  padding-top: 20px;
-}
-
-.search-form>h1 {
-  color:rgb(64, 66, 65);
-  font-size: large;
-  margin-left: 30px;
-}
-
-.search-bottom {
-  width: 70%;
-  background-color: #636666;
-  border-radius: 10px;
-  margin-left: 10%;
-  margin-top: 13%;
-}
-
-.search-icon {
-  color: #0af0f8;
-  margin-left: 10%;
-}
 
 
 .item-contents {
@@ -217,12 +193,16 @@ a {
   align-items: center;
   padding: 20px 0;
   
+  
 }
 
-.life-contents>.title {
+.new-life-title {
   padding-left: 20px;
   color:rgb(95, 94, 94);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: x-large;
+  margin-top: 40px;
+  margin-right: auto;
 }
 
 .second-title {
@@ -231,7 +211,7 @@ a {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: xx-large;
-
+ 
 }
 
 

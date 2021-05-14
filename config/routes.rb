@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :relationships, only: [:create, :destroy]
   root to: 'lives#index'
   resources :lives, only: [:index, :new, :create, :show] do
+    collection do
+      get 'search'
+    end
     resources :likes, only: [:create, :destroy]
     resources :yells, only: [:index, :create]
   end
