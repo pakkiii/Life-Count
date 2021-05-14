@@ -1,4 +1,5 @@
 class LivesController < ApplicationController
+  
   def index
     @lives = Life.all.order("created_at DESC")
   end
