@@ -3,22 +3,41 @@
 <div class="main-page-box">
   <%= render "shared/leftbox" %>
   <div class='item-contents'>
-    <h2 class='title'>最近の様々な悩み</h2>
+    <h2 class='new-life-title'>最近の様々な悩み</h2>
     <div class='item-lists'>
 
       <% @lives.each do |life| %>
-        <% if life.tired_id == 6 && life.tired_id ==7 %>
-          <div class='item-img-content'>
+        <% if life.tired_id == 6  %>
+          <div class='item-img-content-5'>
             <%= link_to life_path(life.id) do %>
-            <div class="created">
-              <%= life.created_at.strftime("%Y-%m-%d ")%>
-            </div>
-            <div class="life-title-content">
-              <div class="tired-name">種類</div><%= life.tired.name%>
+              <div class="life-title-content">
+                <div class="tired-name">種類</div><%= life.tired.name%>
             </div>
             <div class='life-title-content'>
               <div class="tired-name">季節</div><%= life.month.name %>
             </div>
+          
+            <div class="created">
+              <div class="c-1"><%= image_tag 'other.png' , size: '30x30' %></div>
+              <%= time_ago_in_words(life.created_at) %>前
+            </div>
+        <% end %>
+      </div>
+        <% elsif life.tired_id == 7 %>
+          <div class='item-img-content-6'>
+            <%= link_to life_path(life.id) do %>
+              <div class="life-title-content-p">
+                <div class="tired-name-p">種類</div>
+                <div class="small-tired"><%= life.tired.name %></div>
+              </div>
+              <div class='life-title-content'>
+                <div class="tired-name">季節</div><%= life.month.name %>
+              </div>
+          
+              <div class="created">
+                <div class="c-1"><%= image_tag 'unknown.png' , size: '30x30' %></div>
+                  <%= time_ago_in_words(life.created_at) %>前
+              </div>
             <% end %>
           </div>
 
@@ -29,3 +48,4 @@
     </div>
   </div>
 </div>
+<%= render "shared/putsicon"%>
