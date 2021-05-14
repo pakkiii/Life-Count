@@ -61,37 +61,43 @@ a {
 
 .follow-box {
   height: 70px;
-  width: 70px;
+  width: 200px;
   margin: 0 5% 0 auto;
+  margin-bottom: 30px;
+  border: gray solid 1px;
+  display: flex;
+  padding-left: 10px;
 }
 
 .follow-btn {
   border: none;
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   background-color: #dadbdb;
   border-radius: 100%;
 }
 
-.follow-btn:hover {
-  border: none;
-  height: 100px;
-  width: 100px;
-  background-color: #c3fae5;
-  border-radius: 100%;
-}
+
 
 .unfollow-btn {
   border: none;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 .follow-icon {
-  width: 60%;
-  height: 60%;
+  margin-top: 5px;
+  width: 90%;
+  height: 90%;
+  
 }
 
+.follow-sentence {
+  font-size: x-large;
+  color: #494b4b;
+  margin-top: 15px;
+
+}
 
 
 

@@ -134,7 +134,7 @@ table td{
 
 .life-title-content {
   display: flex;
-  border-bottom: solid 3px rgb(167, 165, 165);
+  border-bottom: solid 2px rgb(167, 165, 165);
 }
 
 .tired-name {
@@ -372,4 +372,10 @@ table td{
   height:1000px;
   background-color:rgb(235, 236, 236);
   margin: 0 auto;
+}
+
+
+
+.user-show-box {
+  display: flex;
 }

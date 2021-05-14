@@ -2,45 +2,33 @@
 <div class="main-page-box">
   <%= render "shared/leftbox" %>
   <div class='life-contents'>
-    <% if current_user.id == @user.id %>
-      <h2 class='title'>おかえりなさいませ<%= current_user.nick_name %>様</h2>
-      <h3 class='subtitle'>過去の悩みを振り返ると自分の成長に気づけることもございますよ</h3>
-    <% else %>
-      <h2 class='title'><%= @user.nick_name %>様のマイページ</h2>
-    <% end %>
-    
-    <div class='life-lists'>
-
-      <% @lives.each do |life| %>
-          <div class='life-img-content'>
-            <%= link_to life_path(life.id) do %>
-            <div class="created">
-              <%= life.created_at.strftime("%Y-%m-%d ")%>
-            </div>
-            <div class="life-title-content">
-              <div class="tired-name">種類</div><%= life.tired.name%>
-            </div>
-            <div class='life-title-content'>
-              <div class="tired-name">季節</div><%= life.month.name %>
-            </div>
-            <% end %>
-          </div>
+    <div class="user-show-box">
+      <% if current_user.id == @user.id %>
+        <h2 class='title'>おかえりなさいませ<%= current_user.nick_name %>様</h2>
+        <h1 class='title'>過去の悩みを振り返ると自分の成長に気づけることもございますよ</h1>
+      <% else %>
+        <div class='second-title'><%= @user.nick_name %>様の投稿一覧</div>
       <% end %>
       
-    </div>
-    <div class="follow-box">
-      <% if current_user.id != @user.id %>
-        <% if current_user.following?(@user) %>
-          <%= button_to relationship_path(current_user.relationships.find_by(follower: @user.id)), method: :delete, class: "follow-btn" do %>
-            <%= image_tag 'follow.png' , class: "follow-icon"%>
-          <% end %>
-        <% else %>
-          <%= button_to relationships_path(follower: @user), class: "follow-btn" do %>
-            <%= image_tag 'unfollow.png' , class: "follow-icon"%>
+      <div class="follow-box">
+        <% if current_user.id != @user.id %>
+          <% if current_user.following?(@user) %>
+            <h1 class="follow-sentence">Thankyou!</h1>
+            <%= button_to relationship_path(current_user.relationships.find_by(follower: @user.id)), method: :delete, class: "follow-btn" do %>
+              <%= image_tag 'follow.png' , class: "follow-icon"%>
+            <% end %>
+          <% else %>
+            <h1 class="follow-sentence">Follow me!</h1>
+            <%= button_to relationships_path(follower: @user), class: "follow-btn" do %>
+              <%= image_tag 'unfollow.png' , class: "follow-icon"%>
+            <% end %>
           <% end %>
         <% end %>
-      <% end %>
+      </div>
     </div>
+
+    <%= render "shared/show_life" %>
+    
   </div>
 
 </div>
@@ -48,7 +36,7 @@
 
 <%= link_to(new_life_path, class: 'purchase-btn') do %>
   <span class='purchase-btn-text'></span>
-  <%= image_tag 'count.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+  <%= image_tag 'new-life.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 <% end %>
 
 

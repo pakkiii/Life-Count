@@ -1,6 +1,6 @@
 class LivesController < ApplicationController
   def index
-    @lives = Life.all
+    @lives = Life.all.order("created_at DESC")
   end
 
 
@@ -19,7 +19,7 @@ class LivesController < ApplicationController
 
   def show
     @life = Life.find(params[:id])
-    @lives = Life.all
+    @lives = Life.all.order("created_at DESC")
     @like = Like.new
     @yell = Yell.new
     @yells = @life.yells
