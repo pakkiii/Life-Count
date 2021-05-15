@@ -2,8 +2,19 @@
 <div class="main-page-box">  
   <%= render "shared/leftbox" %>
   <div class='item-contents'>
-    <h2 class='title'>新しく投稿された悩み</h2>
-    <%= render "shared/show_life"%>
+    <% if @lives.length != 0%>
+      <h2 class='new-life-title'>検索された投稿</h2>
+      <%= render "shared/show_life"%>
+    <% else %>
+      <div class="search-sorry">
+        <div class="sorry-sentence">
+          <p class="sorry-p">申し訳ございません<%= current_user.nick_name %>様</p>
+          <p class="sorry-p">お探しになられていた悩みは見つかりませんでした。</p>
+          <p class="sorry-p">もしかすると投稿のキーワードを短くすることによって見つけることができるかもしれません。</p>
+        </div>
+        <%= image_tag 'sorry.png' , size: '400x400' ,class: "sorry-caracter" %>
+      </div>
+    <% end %>
   </div>
 </div>
 <%= render "shared/putsicon"%>
