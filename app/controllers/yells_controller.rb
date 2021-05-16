@@ -1,4 +1,5 @@
 class YellsController < ApplicationController
+  before_action :authenticate_user!, only: [:create]
   def create
     @yell = Yell.new(yell_params)
     @yell.user_id = current_user.id

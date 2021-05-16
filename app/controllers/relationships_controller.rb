@@ -1,4 +1,6 @@
 class RelationshipsController < ApplicationController
+  before_action :authenticate_user!, only: [:create, :destroy]
+  
   def create
     @other_user = User.find(params[:follower])
     current_user.follow(@other_user)
