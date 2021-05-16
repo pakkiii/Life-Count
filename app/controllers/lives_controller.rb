@@ -1,5 +1,5 @@
 class LivesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :show]
+  before_action :authenticate_user!, only: [:new, :show, :search, :index]
   def index
     @lives = Life.all.order("created_at DESC")
   end
