@@ -47,6 +47,14 @@ class LivesController < ApplicationController
   def other
   end
 
+  def help
+  end
+
+  def about
+  end
+
+  def caution
+  end
 
 
 

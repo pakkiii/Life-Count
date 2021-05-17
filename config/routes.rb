@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   get '/work', to:'lives#work'
   get '/school', to:'lives#school'
   get '/other', to:'lives#other'
+  get '/help', to:'lives#help'
+  get '/about', to:'lives#about'
+  get '/caution', to:'lives#caution'
 
   resources :users, only: :show
 end
