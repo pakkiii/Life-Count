@@ -34,7 +34,7 @@
 	height: 90px;
 	display: block;
 	position: relative;
-	background: rgb(0, 217, 255);
+	background: rgb(233, 233, 233);
 	transition: all 0.2s linear;
 }
 
@@ -42,7 +42,7 @@
 	width: 100%;
 	height: 90px;
 	line-height: 90px;
-	color: #000;
+	color: rgb(51, 51, 51);
 	text-align: center;
 	display: block;
 	position: relative;
@@ -57,7 +57,7 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: rgb(0, 217, 255);
+	background: rgb(233, 233, 233);
 	transition: all 0.2s linear;
 	z-index: 0;
 }
@@ -73,5 +73,5 @@
 .footer-box:hover,
 .footer-box:hover:before,
 .footer-box:hover:after {
-	background: #bbb;
+	background: rgb(0, 217, 255);
 }

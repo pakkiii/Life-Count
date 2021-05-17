@@ -15,8 +15,8 @@
   margin-top: 100px;
   font-size: medium;
   height: 80%;
-  padding-top: 20px;
   border-radius: 6px;
+  padding: 20px;
 }
 
 
@@ -29,4 +29,9 @@
   font-size: xx-large;
   text-align: center;
   margin-bottom: 30px;
+}
+
+
+.help-pass {
+  color: rgb(23, 101, 245);
 }
