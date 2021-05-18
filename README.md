@@ -26,7 +26,7 @@
 当アプリの主軸となる投稿・閲覧、後者ではよりスムーズに投稿された悩みを見つけられるよう左側の検索ボタンより悩み事の検索ができるようになっています。
 また過去の自分の悩みを振り返ることも今までの経験を俯瞰して見れるきっかけとなるためマイページでは閲覧できるよう実装しております。
 
-[![Image from Gyazo](https://i.gyazo.com/719ce6b79f16a1bdf528e4d95193a4f3.png)](https://gyazo.com/719ce6b79f16a1bdf528e4d95193a4f3)
+[![Image from Gyazo](https://i.gyazo.com/1e3b4e999e20d0972dc8d16ce05637bd.png)](https://gyazo.com/1e3b4e999e20d0972dc8d16ce05637bd)
 
 
 ## 追加で実装したいこと
