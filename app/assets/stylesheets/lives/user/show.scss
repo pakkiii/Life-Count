@@ -101,4 +101,70 @@ a {
 }
 
 
+.lanking {
+  font-size: x-large;
+  font-weight: bold;
+  color: #727271;
+  margin-top: 30px;
+}
 
+.lanking-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.follow-member-icon {
+  background-color: rgb(197, 199, 199);
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.user-show-box {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow-a {
+  height: 40px;
+  width: 100px;
+  background-color: aquamarine;
+}
+
+.hidden{
+  display: none;
+}
+
+.follow-member-icon-2 {
+  background-color: rgb(197, 199, 199);
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+}
+
+
+
+
+
+.test-box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-left: 30px;
+  position: relative;
+  border-radius: 100%;
+}
+
+.test-box-2 {
+  width: 130px;
+  height: 130px;
+  background-color: greenyellow;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border-radius: 100%;
+}
