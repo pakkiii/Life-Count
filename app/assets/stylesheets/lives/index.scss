@@ -237,13 +237,39 @@ a {
   background-color: #FFF;
 }
 
-.life-title-content {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.life-title-content-z {
   text-align: center;
   color: #727271;
-  font-size: x-large;
+  font-size: medium;
   margin-top: 20px;
-
 }
+
 
 
 
@@ -353,6 +379,7 @@ a {
   width: 250px;
   background-color: rgb(230, 253, 18);
   border-radius: 100%;
+  position: relative;
 }
 
 
@@ -377,6 +404,34 @@ a {
   background: rgb(230, 253, 18);
   border-radius: 50%;
 }
+
+
+.item-img-content-z {
+  padding-top: 4%;
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 270px;
+  width: 270px;
+  background-color: rgb(230, 253, 18);
+  border-radius: 100%;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -415,6 +470,22 @@ a {
 }
 
 
+
+
+.item-img-content-2-z {
+  padding-top: 4%;
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 270px;
+  width: 270px;
+  background-color: rgb(136, 253, 2);
+  border-radius: 100%;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+}
+
+
 .item-img-content-3 {
   padding-top: 4%;
   margin-left: 10px;
@@ -448,15 +519,28 @@ a {
   border-radius: 50%;
 }
 
+.item-img-content-3-z {
+  padding-top: 4%;
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 270px;
+  width: 270px;
+  background-color: rgb(4, 252, 136);
+  border-radius: 100%;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+}
+
 .item-img-content-4 {
   padding-top: 4%;
   margin-left: 10px;
   margin-top: 20px;
-  position: relative;
   height: 250px;
   width: 250px;
   background-color: rgb(6, 253, 253);
   border-radius: 100%;
+  position: relative;
 }
 
 .item-img-content-4:before {  
@@ -479,6 +563,20 @@ a {
   bottom: 3px;
   background: rgb(6, 253, 253);
   border-radius: 50%;
+}
+
+
+.item-img-content-4-z {
+  padding-top: 4%;
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 270px;
+  width: 270px;
+  background-color: rgb(6, 253, 253);
+  border-radius: 100%;
+  position: absolute;
+  top: -30px;
+  left: -20px;
 }
 
 .item-img-content-5 {
@@ -513,6 +611,18 @@ a {
   background: rgb(188, 245, 247);
   border-radius: 50%;
 }
+.item-img-content-5-z {
+  padding-top: 4%;
+  margin-left: 10px;
+  margin-top: 20px;
+  height: 270px;
+  width: 270px;
+  background-color: rgb(188, 245, 247);
+  border-radius: 100%;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+}
 
 .item-img-content-6 {
   padding-top: 4%;
@@ -545,6 +655,19 @@ a {
   bottom: 3px;
   background: rgb(109, 253, 222);
   border-radius: 50%;
+}
+
+.item-img-content-6-z {
+  padding-top: 4%;
+  margin-left: 10px;
+  margin-top: 20px;
+  position: absolute;
+  height: 270px;
+  width: 270px;
+  background-color: rgb(109, 253, 222);
+  border-radius: 100%;
+  top: -30px;
+  left: -20px;
 }
 
 .life-title-content-p {

@@ -8,6 +8,11 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 
+require("chartkick")
+require("chart.js")
+
+require("../follow.js")
+require("../test.js")
 
 
 

@@ -22,6 +22,16 @@
                 <%= time_ago_in_words(life.created_at) %>前
               </div>
             <% end %>
+            <div class='item-img-content-4-z hidden' >
+              <%= link_to life_path(life.id) do %>
+                <div class="life-title-content-z">
+                  <div class="tired-name">悩み</div><%= life.bad_thing %>
+                </div>
+                <div class="life-title-content-z">
+                  <div class="tired-name">感謝</div><%= life.hope%>
+                </div>
+              <% end %>
+            </div>
           </div>
         <% end %>
           

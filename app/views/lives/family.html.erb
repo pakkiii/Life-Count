@@ -20,7 +20,17 @@
                 <div class="c-1"><%= image_tag 'family.png' , size: '30x30' %></div>
                 <%= time_ago_in_words(life.created_at) %>前
               </div>
-           <% end %>
+            <% end %>
+            <div class='item-img-content-z hidden' >
+              <%= link_to life_path(life.id) do %>
+                <div class="life-title-content-z">
+                  <div class="tired-name">悩み</div><%= life.bad_thing %>
+                </div>
+                <div class="life-title-content-z">
+                  <div class="tired-name">感謝</div><%= life.hope%>
+                </div>
+              <% end %>
+            </div>
           </div>
         <% end %>
       <% end %>  

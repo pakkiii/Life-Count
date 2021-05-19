@@ -1,0 +1,28 @@
+<div class="left-box">
+    <div class="caracter">
+      <%= image_tag "caracter.png", class:"caracter-icon" %>
+    </div>
+    <div class="advaice-box">
+      <p>本日もお疲れ様です<%= current_user.nick_name%>様
+      過去の悩みを振り返ることで自分の成長に気づくこともありますよ。</p>
+    </div>
+    <div class="search-form">
+      <h1>検索してみる？</h1>
+      <div class="search-bottom">
+        <%= link_to '# プライベート', private_path, class: "search-icon" %>
+      </div>
+      <div class="search-bottom">
+        <%= link_to '# 家族関係 ', family_path, class: "search-icon" %>
+      </div>
+      <div class="search-bottom">
+        <%= link_to '# 仕事', work_path, class: "search-icon" %>
+      </div>
+      <div class="search-bottom">
+        <%= link_to '# 学校', school_path, class: "search-icon" %>
+      </div>
+      <div class="search-bottom">
+        <%= link_to '# それ以外', other_path, class: "search-icon" %>
+      </div>
+   
+    </div>
+</div>

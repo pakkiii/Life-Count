@@ -1,13 +1,20 @@
+
+
 <%= render "shared/header" %>
 <div class="main-page-box">
-  <%= render "shared/leftbox" %>
+  <%= render "shared/leftbox_2" %>
   <div class='life-contents'>
     
     <% if current_user.id == @user.id %>
+      
       <div class="user-show-box">
-        <h2 class='home-coming-title-1'>おかえりなさいませ<%= current_user.nick_name %>様</h2>
-        <h1 class='home-coming-title-2'>過去の悩みを振り返ると自分の成長に気づけることもございますよ</h1>
+        <h2 class='home-coming-title-1'>過去の投稿一覧</h2>
+        <div class="follow-member-icon" >
+          <%= image_tag 'family-icon-1.png' , class: "follow-icon"%>
+        </div>
+        
       </div>
+      
     <% else %>
       <div class='second-title'><%= @user.nick_name %>様の投稿一覧</div>
       <div class="follow-box">
@@ -24,14 +31,30 @@
         <% end %>
       </div>
     <% end %>
-      
-      
-  
-      
-    
+
+
+
 
     <%= render "shared/show_life" %>
+
+    <% if current_user.id == @user.id %>
+      <div class="lanking">
+        <%= current_user.nick_name %>様の悩みで共感が多かった悩み
+      </div>
+    <% else %>
+      <div class="lanking">
+        <%= @user.nick_name %>様の多くの共感を得た悩み
+      </div>
+    <% end %>
+
+
+    <%= render "shared/lanking" %>
+
     
+
+    
+
+
   </div>
 
 </div>
