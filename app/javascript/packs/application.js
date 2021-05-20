@@ -13,6 +13,7 @@ require("chart.js")
 
 require("../follow.js")
 require("../test.js")
+require("../yell.js")
 
 
 

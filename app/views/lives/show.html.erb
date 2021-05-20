@@ -92,11 +92,11 @@
         </div>
       <% end %>
     </div>
-    <%= form_with model: [@life, @yell], class: 'yell-form', local: true do |f| %>
+    <%= form_with model: [@life, @yell], class: 'yell-form', id: "form", local: true do |f| %>
       <div class="form-input">
-        <%= f.text_field :content, class: 'form-yell', placeholder: '相手を思いやるエールを送りましょう!' %>
+        <%= f.text_field :content, class: 'form-yell', placeholder: '相手を思いやるエールを送りましょう!', id: "content" %>
       </div>
-      <%= f.submit '送信', class: 'yell-submit' %>
+      <%= f.submit '送信', class: 'yell-submit', id: "submit" %>
     <% end %>
   </div>
 </div>

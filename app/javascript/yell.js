@@ -25,7 +25,7 @@ function post (){
 
     const XHR = new XMLHttpRequest();
 
-    XHR.open("POST", "/posts", true);
+    XHR.open("POST", url, true);
 
     XHR.responseType = "json";
     //JavaScriptの値としてレスポンスを受け取るため事前に定義している
